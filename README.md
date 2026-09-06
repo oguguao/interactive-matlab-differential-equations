@@ -3,9 +3,9 @@
 Companion MATLAB repository for:
 
 **Differential Equations at an Elementary Level with Interactive MATLAB**  
-Ogugua N. Onyejekwe, Ph.D.
+**Ogugua N. Onyejekwe, Ph.D.**
 
-This repository contains the MATLAB source code for the book's **68 Interactive MATLAB Labs**.
+This repository contains the MATLAB source code and ready-to-use MATLAB Live Scripts for the book's **68 Interactive MATLAB Labs**.
 
 ## Repository structure
 
@@ -26,45 +26,80 @@ This repository contains the MATLAB source code for the book's **68 Interactive 
 ```text
 interactive-matlab-differential-equations/
 ├── README.md
+├── LICENSE
 └── chapters/
     ├── chapter-01/
+    │   ├── Interactive_MATLAB_Lab_1_1.m
+    │   ├── ...
+    │   └── mlx/
+    │       ├── Interactive_MATLAB_Lab_1_1.mlx
+    │       └── ...
     ├── chapter-02/
+    │   └── mlx/
     ├── chapter-03/
+    │   └── mlx/
     ├── chapter-04/
+    │   └── mlx/
     ├── chapter-05/
+    │   └── mlx/
     ├── chapter-06/
+    │   └── mlx/
     ├── chapter-07/
+    │   └── mlx/
     ├── chapter-08/
+    │   └── mlx/
     └── chapter-09/
+        └── mlx/
 ```
 
-Each chapter folder contains the corresponding `.m` MATLAB source files and a short chapter README.
+## MATLAB files
 
-## MATLAB Live Scripts
+Each chapter contains two complementary versions of the interactive activities:
 
-The `.m` files are the editable MATLAB source versions. To create interactive Live Scripts:
+- **`.m` files** — readable and editable MATLAB source code.
+- **`.mlx` files** — ready-to-use interactive MATLAB Live Scripts with Live Editor controls where appropriate.
 
-1. Open a `.m` file in MATLAB.
-2. Run and test the script.
-3. Save or convert it as a MATLAB Live Script (`.mlx`).
-4. Add Live Editor controls such as sliders, drop-down menus, or numeric fields where appropriate.
-5. Save the `.mlx` file using the same underscore-based naming convention.
+The `.mlx` files are stored in each chapter's `mlx` subfolder.
 
 Example:
 
 ```text
-Interactive_MATLAB_Lab_6_4.m
-Interactive_MATLAB_Lab_6_4.mlx
+chapters/chapter-06/Interactive_MATLAB_Lab_6_4.m
+chapters/chapter-06/mlx/Interactive_MATLAB_Lab_6_4.mlx
 ```
 
-## Educational purpose
+## Open a lab in MATLAB Online
+
+The Live Scripts can be opened directly from this GitHub repository in MATLAB Online. A file-specific MATLAB Online link follows this pattern:
+
+```text
+https://matlab.mathworks.com/open/github/v1?repo=oguguao/interactive-matlab-differential-equations&file=chapters/chapter-06/mlx/Interactive_MATLAB_Lab_6_4.mlx
+```
+
+MATLAB Online clones the repository and opens the selected file.
+
+## Download a Live Script
+
+Students can also download an `.mlx` file directly from its chapter's `mlx` folder and open it in desktop MATLAB or MATLAB Online.
+
+Example:
+
+```text
+https://github.com/oguguao/interactive-matlab-differential-equations/blob/main/chapters/chapter-06/mlx/Interactive_MATLAB_Lab_6_4.mlx?raw=1
+```
+
+## Learning design
 
 The labs follow the learning sequence:
 
 **Predict → Interact → Examine → Modify → Reflect**
 
-They are intended to support mathematical reasoning, visualization, numerical experimentation, verification, and computational exploration.
+They are intended to support mathematical reasoning, visualization, numerical experimentation, verification, and computational exploration. The MATLAB activities complement the mathematical development rather than replace analytical reasoning.
+
+## Software
+
+The Live Scripts were prepared for **MATLAB R2025b**. Some activities use Symbolic Math Toolbox; many others use base MATLAB.
 
 ## License
 
-Book and companion educational materials are intended for use under the book's CC BY-NC-SA 4.0 license unless otherwise noted.
+The book and companion educational materials are provided under the book's **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license unless otherwise noted.
